@@ -1,5 +1,12 @@
 class SymptomsController < ApplicationController
   def show
+    @symptoms= Symptom.all
+    @symptom_user = @symptom.user
+  end
+
+  def index
+    @symptoms= Symptom.all
+
   end
 
   def new

@@ -1,0 +1,9 @@
+<% @symptoms.each do |s| %>
+<div class="container symptomcard">
+  <h3>Location: <%= s.location%></h3>
+  <li><%=s.user.name%></li>
+  <li>Severity: <%=s.severity%></li>
+  <li>Kind: <%=s.kind%></li>
+
+</div>
+<% end %>

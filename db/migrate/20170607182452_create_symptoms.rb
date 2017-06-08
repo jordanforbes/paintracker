@@ -3,7 +3,8 @@ class CreateSymptoms < ActiveRecord::Migration[5.0]
     create_table :symptoms do |t|
       t.string :location
       t.integer :severity
-      t.string :type
+      t.integer :user_id
+      t.string :kind
 
       t.timestamps
     end
