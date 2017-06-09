@@ -1,12 +1,9 @@
 <% @users.each do |u| %>
   <p>
+    <h3><%= u.name %></h3>
+    <li><%=u.email%></li>
     <li><%= u.id %></li>
-    <li><%= u.name %></li>
-    <li>
-      <%=u.email%>
-    </li>
-    <li>
-      <%=u.password%>
-    </li>
+    <li><%=u.password%></li>
+  
   </p>
 <% end %>
